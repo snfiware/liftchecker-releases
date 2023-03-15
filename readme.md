@@ -2,6 +2,12 @@
 Prüft Aufzüge und Rolltreppen der MVG+DB auf Betriebsbereitschaft.
 
 Das erste Release wurde veröffentlicht: https://github.com/snfiware/liftchecker-releases/releases/tag/v0.5.2
+<div>
+<image src="https://user-images.githubusercontent.com/63856302/225411538-ba473be5-f035-4067-9f87-e5792e709a87.png" width="200"/>
+<image src="https://user-images.githubusercontent.com/63856302/225411543-829f8a9e-2a94-449e-8498-9d35f64bcbb2.png" width="200"/>
+<image src="https://user-images.githubusercontent.com/63856302/225411548-0ba44651-9ab4-47ad-a5f7-2a9fffba2897.png" width="200"/>
+<image src="https://user-images.githubusercontent.com/63856302/225411553-6538e5c0-d7a9-4254-883f-d2767240e430.png" width="200"/>
+</div>
 
 <!DOCTYPE HTML>
 <html>

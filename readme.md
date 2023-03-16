@@ -1,5 +1,5 @@
 # Liftchecker - Veröffentlichte Releases
-Prüft Aufzüge und Rolltreppen der MVG+DB auf Betriebsbereitschaft, damit Mobilitätseingeschränkte hoffentlich durch sie seltener vor defekten Liften stehen werden.
+Prüft Aufzüge und Rolltreppen der MVG+DB auf Betriebsbereitschaft, damit Mobilitätseingeschränkte dadurch hoffentlich seltener vor defekten Liften stehen werden.
 
 Das erste Release wurde veröffentlicht: https://github.com/snfiware/liftchecker-releases/releases/tag/v0.5.2
 <div>

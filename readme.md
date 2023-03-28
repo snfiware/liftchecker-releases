@@ -1,7 +1,11 @@
 # Liftchecker
-Prüft Aufzüge und Rolltreppen der MVG + DB auf Betriebsbereitschaft, damit Mobilitätseingeschränkte dadurch hoffentlich seltener vor defekten Liften stehen werden. Feststecken im Sperrengeschoss? Nie wieder!
+Prüft Aufzüge und Rolltreppen der MVG + DB auf Betriebsbereitschaft, damit Mobilitätseingeschränkte dadurch hoffentlich seltener vor defekten Liften stehen werden. 
 
-Hole Dir Liftchecker >>> <a href='https://github.com/snfiware/liftchecker-releases/releases/tag/v0.5.2'>v0.5.2</a> <<<
+Hol' Dir Liftchecker >>> <a href='https://github.com/snfiware/liftchecker-releases/releases/tag/v0.5.2'>v0.5.2</a> <<<
+---
+
+    Feststecken im Sperrengeschoss? Nie wieder!
+
 
 # Screenshots
 <div>

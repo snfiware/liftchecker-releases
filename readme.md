@@ -1,5 +1,5 @@
 # Liftchecker
-Prüft Aufzüge und Rolltreppen der MVG + DB auf Betriebsbereitschaft, damit Mobilitätseingeschränkte dadurch hoffentlich seltener vor defekten Liften stehen werden. 
+Prüft Aufzüge und Rolltreppen der MVG + DB auf Betriebsbereitschaft, damit der Weg zu und von den Öffentlichen Verkehrsmitteln - insbesondere für Mobilitätseingeschränkte - hoffentlich seltener von defekten Liften behindert wird. 
 
 Hol' Dir Liftchecker >>> <a href='https://github.com/snfiware/liftchecker-releases/releases/tag/v0.5.2'>v0.5.2</a> <<<
 ---

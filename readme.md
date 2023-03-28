@@ -1,7 +1,7 @@
 # Liftchecker
 Prüft Aufzüge und Rolltreppen der MVG + DB auf Betriebsbereitschaft, damit der Weg zu und von den Öffentlichen Verkehrsmitteln - insbesondere für Mobilitätseingeschränkte - hoffentlich seltener von defekten Liften behindert wird. 
 
-Hol' Dir Liftchecker <pre style='display:inline-block;'>>>> <a href='https://github.com/snfiware/liftchecker-releases/releases/tag/v0.5.2'>v0.5.2</a> <<<</pre>
+Download <pre style='display:inline-block;'> <a href='https://github.com/snfiware/liftchecker-releases/releases/download/v0.5.2/snflc-v0.5.2-Public-release.apk'><image src="https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png" width="50"/></a> </pre>
 ---
 
     Feststecken im Sperrengeschoss? 

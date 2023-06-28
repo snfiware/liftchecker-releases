@@ -1,5 +1,5 @@
 # Liftchecker
-Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und bietet viele nützliche Barrierefrei-Infos.
+Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und bietet viele nützliche Barrierefrei-Infos. Diese können durch die integrierte Suche analysiert und mittels OrganicMaps visualisiert werden.
 
 Download <pre style='display:inline-block;'> <a href='https://github.com/snfiware/liftchecker-releases/releases/download/v0.5.2/snflc-v0.5.2-Public-release.apk'><image src="https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png" width="50"/></a> </pre>
 ---
@@ -20,15 +20,9 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 <html>
 <head>
     <meta charset="utf-8" content="text/html"/>
-    <!-- css filename is altered by the HelpActivity onCreate-->
     <link href="styles_main.css" rel="stylesheet">
 </head>
 <body>
-<!--
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
-<li></li>
-<li></li>
--->
 
 <br id="hTopToc"/>
 <h1>Inhaltsverzeichnis</h1>
@@ -44,7 +38,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li class="toc"><a href="#hNotes">Hinweise</a> </li>
 </ol>
 <br/>
-<p>Stand: Mai 2023</p>
+<p>Stand: Juni 2023</p>
 <br id="hKeyFeatures"/>
 <h1>Kurzbeschreibung</h1>
 <p>Barrierefrei unterwegs mit den Öffis - dafür haben wir Liftchecker erstellt! Wir bieten eine hochgradig integrierte App, um möglichst ohne Probleme durch den ÖPNV zu kommen und alle Informationen "auf einen Klick" zur Hand zu haben, die wichtig sind, wenn man trotz Mobilitätseinschränkung aktiv sein will.</p>
@@ -69,6 +63,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     </li>
 </ol>
 
+<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
 <br id="hSettings"/>
 <h1>Features und Einstellungen</h1>
 <p>Liftchecker</p>
@@ -79,14 +74,16 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li>verfügt über Einstellmöglichkeiten zum Abfragen des Liftstatus nur zu bestimmten Wochentagen und Uhrzeiten. Es können bis zu sieben Zeitfenster festgelegt werden, die die automatische Hintergrundaktivität steuern.</li>
     <li>kann Liftalarme eine konfigurierbare Zeitspanne zurückstellen. Dies ist direkt über die Benachrichtigung als auch in der App möglich.</li>
     <li>fragt via 'Liftstatus jetzt prüfen' oder im Hintergrund immer nur - um Datenvolumen zu sparen - die gewählten Favoriten ab. Da die APIs auf Ebene der Station arbeiten (und nicht mit Lift), werden alle Lifte der Station mit aktualisiert. Die übrige Gesamtliste veraltet, kann aber im Menü unter 'Lifte' jederzeit aktualisiert werden.</li>
-    <li>stellt in der Liftliste auf der linken Seite drei Icons dar, jeweils eine Auswahl aus <br/>a) Aufzug, Rolltreppe (wir nennen beides als Überbegriff 'Lift'), 'Bahnhof ohne Lift' oder Unbekannt (wenn keine Infos von der Online-Schnittstelle geliefert werden, werden virtuelle Einträge anhand der fehlenden Stationen ggü der statisch eingebundenen Stationsinformationen generiert), <br/>b) Anbieter (Provider), z.Zt. MVG, DB und <br/>c) Status des Lifts/der Station. Der Status kann sein: OK (in Betrieb), NBP (Nicht barrierefrei passierbar/außer Betrieb), TMT (Timeout; wann die Information als veraltet gilt kann man einstellen) und ? (unbekannt). Jeder Eintrag besitzt ein kontextabhängiges Popup-Menü mit weiteren nützlichen Optionen.</li></ol>
+    <li id="hSymbols">stellt in der Liftliste auf der linken Seite drei Icons dar, jeweils eine Auswahl aus <br/>a) Aufzug, Rolltreppe (wir nennen beides als Überbegriff 'Lift'), 'Bahnhof ohne Lift' oder Unbekannt (wenn keine Infos von der Online-Schnittstelle geliefert werden, werden virtuelle Einträge anhand der fehlenden Stationen ggü der statisch eingebundenen Stationsinformationen generiert), <br/>b) Anbieter (Provider), z.Zt. MVG, DB und <br/>c) Status des Lifts/der Station. Der Status kann sein: OK (in Betrieb), NBP (Nicht barrierefrei passierbar/außer Betrieb), TMT (Timeout; wann die Information als veraltet gilt kann man einstellen) und ? (unbekannt). Jeder Eintrag besitzt ein kontextabhängiges Popup-Menü mit weiteren nützlichen Optionen.</li>
+</ol>
 <p>Optionen in der Liftliste (Long-Klick):</p>
 <ul>
     <li>Navigation zu <a href='#hMaps'>Stations- und Umgebungsplänen</a>.</li>
     <li>Lift umbenennen (da die Informationen der Anbieter teilweise auslegungsfähig sind).</li>
     <li>Zurückstellen von Alarmen: manuelles Setzen und Aufheben.</li>
     <li>Such-String: siehe <a href='#hSearch'>eigenes Kapitel</a>. </li>
-    <li>Favoriten verwalten: Massenfunktionen und Einsortieren von nachträglich ausgewählten Liften zu den namensgleichen Stationen: Verfügbar am Listenende (des dort obersten) zum 'Nach-oben-Verschieben'.</li>
+    <li>Favoriten verwalten: Massenfunktionen und Einsortieren von nachträglich ausgewählten Liften zu den namensgleichen Stationen: Verfügbar am Listenende (des dort obersten) zum 'Nach-oben-Verschieben' (Moni-Feature:)).</li>
+    <li><a href='#hGeo'>Geodaten nutzen</a></li>
     <li>Zusatz-Informationen sind in der Liftliste mit * gekennzeichnet. Hier kann man bei der MVG Planungsdaten für die prognostizierte Wiederverfügbarkeit betrachten - die DB-Einträge bieten hier Stations-Informationen. Wenn dort entsprechende Textpassagen ausgewählt werden, bieten die meisten Mobiltelefone kontextspezifische Optionen wie: Karte öffnen, anrufen, ... </li>
 </ul>
 <p>Android</p>
@@ -110,6 +107,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
         <p>Standard und Störungen teilen sich eine Benachrichtigungs-ID - man sieht nie mehr als eine Benachrichtigung gleichzeitig. Spezialberichte werden parallel dazu angezeigt.</p>
     </li>
     <li>aktualisiert grundsätzlich <i>jedes Mal</i> die Benachrichtigungen, wenn der Liftstatus aktualisiert wird. Wenn das stört, bitte den Kanal Standard und die Spezialberichte ausschalten. Störungsmitteilungen sollte nicht ausgeschaltet werden.</li>
+    <li>kann die Favoriten vor versehentlichem Verändern schützen. Wenn die Option im Lifte-Menü angeschaltet ist, wird beim Abwählen eine Bestätigung eingefordert und jede Änderung aktualisiert die Benachrichtigung(en). Das wurde als extra Option implementiert, da nicht jeder Klick bei der initialen Zusammenstellung ständig Benachrichtigungen senden soll.</li>
     <li>bietet die Möglichkeit Störungsmitteilungen / die Alarme zurückzustellen. Erst nachdem die Zeit abgelaufen ist, werden für diesen Lift erneut Benachrichtigungen an den Störungskanal geschickt. Die Benachrichtigungen auf den anderen Kanälen sind unabhängig davon - ein Zurückstellen wirkt also z.B. <u>nicht</u> auf die Standardmitteilungen.</li>
 </ul>
 
@@ -118,13 +116,13 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 <h1>Suche</h1>
 <p>Die Suche in den Liften soll sowohl einfach zugänglich sein, als auch Spezialbedürfnisse befriedigen. Generell gilt:</p>
 <ul>
-    <li>Ein Bahnhof ist in der Liste nur dann als <b>Lift</b> enthalten, wenn die Online-API ("Gesamtliste aktualisieren") ihn mit mindestens einem Aufzug oder einer Rolltreppe zurückmeldet. </li>
     <li>Groß-/Kleinschreibung ist egal.</li>
     <li>Leerzeichen trennen die Eingabe in Such-Token. Jeder Token wird einzeln gesucht.</li>
+    <li>Ein Bahnhof ist in der Liste nur dann als <b>Lift</b> enthalten, wenn die Online-API ihn mit mindestens einem Aufzug oder einer Rolltreppe zurückmeldet. Der Bahnhof wird anderenfalls aus den statisch eingebunden Infos generiert (erkennbar am <a href="#hSymbols">Symbol</a> Bahnhof ohne Lift)</li>
     <li>Worin und wie wird gesucht? Im sog. Such-String mit einem simplen "ist enthalten" - es wurde auf Wildcards (*,?) verzichtet.</li>
-    <li>Wenn man einfach lostippt führt man eine Freitext-Suche - eine sog. "simple query" - im gesamten Such-String jedes einzelnen Liftes - aus.</li>
+    <li>Wenn man einfach lostippt führt man eine Freitext-Suche - eine sog. "simple query" - aus. Ob damit im gesamten Such-String jedes einzelnen Liftes, oder nur gezielt nach Stationen gesucht wird, ist abhängig von der Einstellung "Einfache Stationssuche".</li>
 </ul>
-<p>Man kann aber auch nur bestimmte Anteile des Such-Strings (und nicht alles) abfragen:</p>
+<p>Man kann darüber hinaus aber auch nur gezielt bestimmte Anteile des Such-Strings (und nicht alles) abfragen:</p>
 <ul>
     <li>Der Such-String kann via Popup-Menü eines Listeneintrags angezeigt werden. Er besteht grundsätzlich aus allen verfügbaren Textanteilen, die die App vom Anbieter aus der Online-Schnittstelle, aber auch von statisch eingebunden Listen bekommt. </li>
     <li>Die verfügbaren Such-Token sind im Such-String gelistet, beginnen mit einem zweistelligen Bezeichner, gefolgt von # und enden mit dem eigentlichen Inhalt.</li>
@@ -134,7 +132,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 <p>Jede Suche besteht intern aus mehreren Schritten:</p>
     <ol>
         <li>Freitext-Suche ("simple query") ausführen</li>
-        <li>Verbundene Stationen expandieren</li>
+        <li>Verbundene Stationen expandieren (je nach Einstellung)</li>
         <li>Restliche Such-Token abfragen (alle Bezeichner# der eingegebenen Suche)</li>
     </ol>
 <p>Damit kann so etwas formuliert werden:<br><i style='padding-left:10px'>   hbf nch !si#4162 !si#4231 dd#1</i></p>
@@ -143,15 +141,38 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li>Mü<b>nch</b>en <b>Hbf</b> der DB wird durch die Freitext-Suche gefunden</li>
     <li>Diese Station ist (mittels interner Konfiguration) mit MVG Hauptbahnhof korreliert, deswegen werden alle Lifte dieser Station <i>zusätzlich</i> mit angezeigt. </li>
     <li>Freitext 'nch' findet auch Mönchengladbach. Diese Stations-ID wird mit '!si#' komplett ausgeschlossen. Ebenso (Beispiel für logisches OR) eine zweite Station:</li>
-    <li>Freitext 'hbf' findet auch einen Lift an der Donnersbergerbrücke, da in der Liftbeschreibung 'Ri Hbf' steht. Tipp: Der Ausschluss würde alternativ auch mit der 'device id' <i>di#</i> oder auch anderen Bezeichnern möglich sein.</li>
+    <li>Freitext 'hbf' findet (mit Einstellung: "Einfache Stationssuche"=aus) auch einen Lift an der Donnersbergerbrücke, da in der Liftbeschreibung 'Ri Hbf' steht. Tipp: Der Ausschluss würde alternativ auch mit der 'device id' <i>di#</i> oder auch anderen Bezeichnern möglich sein.</li>
     <li>dd#1 sucht in der Liftbeschreibung ('device description') nach der Ziffer 1. Damit verbleiben Einträge mit U1 (MVG) und mit 'zum Gleis 1' (DB). Hinweis: 'dd#1' im Vergleich zu einfach '1' macht im Ergebnis einen ziemlich großen Unterschied!</li>
 </ul>
 <h2>Suchen merken und verwalten</h2>
 <ul>
     <li>Gespeicherte Suchen sind bei geöffnetem Suchschlitz über das Lupesymbol verfügbar. Bei einem Klick darauf wird ein Popup angezeigt - Optionen:</li>
-    <li>Der aktuell eingegebene Suchtext kann direkt gespeichert oder auch zusätzlich mit einem Namen versehen werden. Der Suchtext wird dadurch zur gespeicherte Suche (GS) und kann damit wiederhergestellt werden. Damit hat man die Möglichkeit - über die Favoriten hinaus - weitere Listen zu verwalten.</li>
-    <li>GS können einfach als Suche wiederhergestellt werden. Wenn man die aktuelle Liftauswahl nicht verlieren möchte, kann man die Menüoption 'Liste als Suchtext verwenden' wählen und ihn als GS sichern.</li>
+    <li>Der aktuell eingegebene Suchtext kann direkt gespeichert oder auch zusätzlich mit einem Namen versehen werden. Der Suchtext wird dadurch zur gespeicherten Suche (GS) und kann damit wiederhergestellt werden. Damit hat man die Möglichkeit - über die Favoriten hinaus - weitere Listen zu verwalten.</li>
+    <li>GS können einfach als Suche wiederhergestellt werden. Wenn man z.B. die aktuelle Liftauswahl (beim Herumspielen) nicht verlieren möchte (Gesamt-Backup-Feature gäbe es im Startfenster auch), kann man die Menüoption 'Liste als Suchtext verwenden' wählen und sie als GS sichern. Dies ist nicht perfekt, da die 'device identifiers' verwendet werden, diese aber von den Anbietern teilweise so gestaltet wurden, sodass sie tatsächlich alleine leider nicht eindeutig sind. Außerdem gibt es auch wenige Überdeckungen der IDs zw. den Anbietern. Man verliert aber dadurch nichts, sondern gewinnt etwas dazu :)</li>
     <li>Profi-Tipp: Im Popup der Lifteinträge befindet sich die Option 'Favoriten verwalten'. Zusammen mit den GS können damit einfach Mengenoperationen wie Vereinigen oder Schneiden zwischen Favoriten und den GS durchgeführt werden.</li>
+</ul>
+<h2>Such-Token</h2>
+<ul>
+    <li>Um mehr über die Bereichssuchen zu erfahren, sollte man in der Liftliste die Option 'Such-String & Zusatz-Infos(*) anzeigen' wählen. Am konkreten Beispiel versteht man es am besten. Diese sind definiert:
+        <ul>
+            <li>PR provider</li>
+            <li>SN station name</li>
+            <li>SI station id</li>
+            <li>DT device type</li>
+            <li>DI device id</li>
+            <li>DS device status</li>
+            <li>DD device description</li>
+            <li>DR device replacement text</li>
+            <li>AI additional information</li>
+            <li>AZ alarm zzzleeps</li>
+            <li>MX manual extension</li>
+        </ul>
+    </li>
+    <li><i>Verschiedene</i> Token werden untereinander immer UND verknüpft - wenn man die gleichen Token mehrfach benutzt, wird nachfolgende Suchsemantik benutzt.</li>
+    <li>Die IDs (SI, DI) werden nur exakt (also nicht fragmentarisch) gefunden und untereinander ODER verknüpft. Man kann somit Listen bilden.</li>
+    <li>Wenn man DR# oder AZ# in den Suchschlitz eingibt, bekommt man alle Lifte, die umbenannt oder zurückgestellt sind.</li>
+    <li>AI untereinander werden UND verknüpft.</li>
+    <li>Alle anderen werden untereinander ODER verknüpft - dt#b dt#a würde beispielhaft Bahnhöfe ohne Lifte und die Aufzüge selektieren.</li>
 </ul>
 
 <div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
@@ -173,8 +194,10 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 <h1>Geodaten</h1>
 <p>Unsere App</p>
 <ul>
-    <li>bietet im Liftmenü die Möglichkeit Geodaten zu nutzen <i>ohne</i> dass Berechtigungen für den Standort erteilt werden müssen. Es kann ein Lift als Zentrum festlegt werden. Sodann werden in der Liftliste die Distanzen dieses Ortes zu anderen gerade angezeigten berechnet und angezeigt. </li>
-    <li>kann die Einträge der Liftliste entweder nach geografischer Distanz oder in alphabetischer Reihenfolge darstellen. Da die Distanz-Berechnung nicht unaufwändig ist - obwohl nur ein einfacher, ungenauer Algorithmus verwendet wird - kann das für umfangreiche Listen einen Moment lang Zeit benötigen. Deswegen haben wir auf eine automatische Umschaltung verzichtet. Man hat die Möglichkeit dies im Liftmenü über 'Liste sortieren' anzustoßen. Wenn ein Geo-Bezugspunkt ausgewählt ist, wird nach der Distanz zu diesem sortiert. Falls nicht, nach alphabetischer Reihenfolge.</li>
+    <li>verfügt über eine Integration mit <i>OrganicMaps</i> (einem Fork von MapsMe), einem tollen Projekt mit ähnlichen Wertevorstellungen wie unsere. OM zu nutzen erfordert eine Installation (z.B. über einen App Store). OM ist eine Offline-Karten-App, welche aus Liftchecker heraus aufgerufen werden und so die Liftchecker-Stationen (und deren Sammelstatus) auf einer Karte visualisieren kann. Der Sammelstatus einer Station kann sein: a) grün - barrierefrei passierbar, b) rot - Barriere(n) vorhanden, c) grau - unbestimmt, d) braun - inaktuell. LC ruft OM aus dem <i>aktuellen</i> Kontext heraus auf, d.h. wenn man im LC nur Aufzüge in der Liste hat, wird im OM auch nur der Status dieser Aufzüge (zusammengefasst auf Stationen) angezeigt - Rolltreppen werden also dann nicht berücksichtigt. Man hat somit insbesondere über die <a href="#hSearch">Suche</a> selbst die Kontrolle, welchen Gesamtstatus man im OM sieht. Am besten öffnet man OM parallel zu LC und wechselt zwischen den Apps: Ein Long-Klick auf den Text einer Kartenmarkierung kopiert den Stationsnamen in die Zwischenablage, diesen Text dann im LC suchen - dort bekommt man die Details, warum ein Status nicht grün ist. Wer die Kartenmarkierungen wieder loswerden will, führt in OM eine Suche aus. </li>
+    <li>bietet im Liftmenü (Long-Klick auf einen Eintrag in der Liftliste) die Möglichkeit Geodaten zu nutzen <i>ohne</i> dass Berechtigungen für den Standort erteilt werden müssen. Es kann ein Listeneintrag als Zentrum festlegt werden. Sodann werden in der Liftliste die Distanzen dieses Ortes zu den anderen sichtbaren berechnet und angezeigt. </li>
+    <li>kann die Einträge der Liftliste entweder nach geografischer Distanz oder in alphabetischer Reihenfolge sortiert darstellen. Da die Distanz-Berechnung nicht unaufwändig ist - obwohl nur ein einfacher, ungenauer Algorithmus verwendet wird - kann das für umfangreiche Listen einen Moment lang Zeit benötigen. Deswegen haben wir auf eine automatische Umschaltung verzichtet. Man hat die Möglichkeit dies im Liftmenü über 'Liste sortieren' anzustoßen. Wenn ein Geo-Bezugspunkt ausgewählt ist, wird nach der Distanz zu diesem sortiert. Falls nicht, nach alphabetischer Reihenfolge.</li>
+    <li>ermöglicht Karten direkt aufzurufen: a) Google Maps b) Organic Maps c) Handy-spezifische Integration über die Textselektion der Geokoordinaten aus dem Such-String. Wenn man dort Text so auswählt <span style="font-family:courier;">geo:[ <span style="background-color:#AAAAAA;">52.67556, 13.59264</span> ]</span> sollte das Gerät erkennen, dass es sich dabei um Geokoords handelt und einen entsprechenden Menüpunkt, z.B. 'Karte öffnen' anbieten. Tipp: dies funktioniert für Adressen, Telefonnummern (z.B. die in die App integrierten Nummern der 3S-Zentrale sowie des Mobility-Service), u.a. oft auch. </li>
     <li>hat uns ermöglicht die Geodaten der Lifte aus den Online-API-Calls einfach zu untersuchen - da dabei sich einige Detail-Infos als ziemlich irreführend herausstellten, haben wir uns entschieden nicht für jeden Lift diese Details zu verwenden, sondern statische Stationsdaten. Somit kann man also mit unserer App <i>keine</i> Annäherungsverfolgung an einen bestimmten Lift vornehmen - alle Lifte einer Station haben die gleiche Koordinate. </li>
     <li>besitzt <i>keine</i> Meldefunktionen (zur Datenverbesserung o.a.), da wir leider selbst über keinen "direkten Draht" zu den Anbietern der Online-Schnittstellen verfügen, der solche Informationen verarbeiten könnte. Wenn SnfiCert-Bewertungen korrigiert werden sollen, kann man die <a href="#hBugsLog">Support-Mailadresse</a> nutzen.</li>
 </ul>
@@ -227,9 +250,8 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
         Quellenangabe "Münchner Verkehrs- und Tarifverbund GmbH (MVV)"
         Datenstand gem. Übersicht: 29.12.2022
     </li>
-    <li>Geokoordinaten, Adress- und Zusatzdaten https://data.deutschebahn.com/dataset/data-haltestellen.html<br/>sowie https://data.deutschebahn.com/dataset/data-stationsdaten.html</li>
+    <li>Geokoordinaten, Adress- und Zusatzdaten https://data.deutschebahn.com/<br/>dataset/data-haltestellen.html<br/>sowie https://data.deutschebahn.com/<br/>dataset/data-stationsdaten.html</li>
 </ul>
-
-<br/>
+<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
 </body>
 </html>

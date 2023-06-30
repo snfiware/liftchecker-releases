@@ -1,7 +1,7 @@
 # Liftchecker
 Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und bietet viele nützliche Barrierefrei-Infos. Diese können durch die integrierte Suche analysiert und mittels OrganicMaps visualisiert werden.
 
-Download <pre style='display:inline-block;'> <a href='https://github.com/snfiware/liftchecker-releases/releases/download/v1.0.2/snflc-v1.0.2-Public-release.apk'><image src="https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png" width="50"/></a><span style='padding:20px;vertical-align:center;'><a href='https://github.com/snfiware/liftchecker-releases/blob/main/main/install.md'> -> Installationshinweise</a></span> </pre>
+Download <pre style='display:inline-block;'> <a href='https://github.com/snfiware/liftchecker-releases/releases/download/v1.0.2/snflc-v1.0.2-Public-release.apk'><image src="https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png" width="50"/></a><span style='padding:20px;vertical-align:center;'><a href='https://github.com/snfiware/liftchecker-releases/blob/main/main/install.md'> -> Hinweise</a></span> </pre>
 ---
 
     Feststecken im Sperrengeschoss? 

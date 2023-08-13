@@ -1,11 +1,7 @@
 # Liftchecker
 Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und bietet viele nützliche Barrierefrei-Infos. Diese können durch die integrierte Suche analysiert und mittels OrganicMaps visualisiert werden.
 
-<a href="#download-und-installation"><image src="https://github.com/snfiware/liftchecker-releases/assets/63856302/8567a500-664e-4407-9dae-1617142d93a1" width="200"/></a>
-<br/> 
-<a href="#download-und-installation"><image src="https://github.com/snfiware/liftchecker-releases/assets/63856302/ba6b2b85-fabc-4fd6-8827-4cb6c60996b1" width="80"/></a>
-
-[![](https://github.com/snfiware/liftchecker-releases/assets/63856302/8567a500-664e-4407-9dae-1617142d93a1)](#download-und-installation)
+[![](https://github.com/snfiware/liftchecker-releases/assets/63856302/8567a500-664e-4407-9dae-1617142d93a1)](https://github.com/snfiware/liftchecker-releases/releases)
 
 # Download und Installation
 

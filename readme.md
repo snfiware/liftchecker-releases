@@ -16,13 +16,6 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 <image src="https://user-images.githubusercontent.com/63856302/225411553-6538e5c0-d7a9-4254-883f-d2767240e430.png" width="200"/>
 </div>
 
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8" content="text/html"/>
-    <link href="styles_main.css" rel="stylesheet">
-</head>
-<body>
 
 <br id="hTopToc"/>
 <h1>Inhaltsverzeichnis</h1>
@@ -253,5 +246,3 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li>Geokoordinaten, Adress- und Zusatzdaten https://data.deutschebahn.com/<br/>dataset/data-haltestellen.html<br/>sowie https://data.deutschebahn.com/<br/>dataset/data-stationsdaten.html</li>
 </ul>
 <div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
-</body>
-</html>

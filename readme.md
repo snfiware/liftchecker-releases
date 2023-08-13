@@ -16,22 +16,31 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 <image src="https://user-images.githubusercontent.com/63856302/225411553-6538e5c0-d7a9-4254-883f-d2767240e430.png" width="200"/>
 </div>
 
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" content="text/html"/>
+    <!-- css filename is altered by the HelpActivity::onCreate-->
+    <link href="styles_main.css" rel="stylesheet">
+</head>
+<body>
+
 <br id="inhaltsverzeichnis"/>
 <h1>Inhaltsverzeichnis</h1>
 <ol>
-    <li class="toc"><a href="#hKeyFeatures">Kurzbeschreibung</a> </li>
-    <li class="toc"><a href="#hSettings">Features</a> </li>
-    <li class="toc"><a href="#hNotifications">Benachrichtigungen</a> </li>
-    <li class="toc"><a href="#hSearch">Suche</a> </li>
-    <li class="toc"><a href="#hMaps">Pläne und Karten</a> </li>
-    <li class="toc"><a href="#hGeo">Geodaten</a> </li>
-    <li class="toc"><a href="#hPrivacy">Datenschutz</a> </li>
-    <li class="toc"><a href="#hLicense">Rechtliches</a> </li>
-    <li class="toc"><a href="#hNotes">Hinweise</a> </li>
+    <li class="toc"><a href="#kurzbeschreibung">Kurzbeschreibung</a> </li>
+    <li class="toc"><a href="#features">Features</a> </li>
+    <li class="toc"><a href="#benachrichtigungen">Benachrichtigungen</a> </li>
+    <li class="toc"><a href="#suche">Suche</a> </li>
+    <li class="toc"><a href="#pläne-und-karten">Pläne und Karten</a> </li>
+    <li class="toc"><a href="#geodaten">Geodaten</a> </li>
+    <li class="toc"><a href="#datenschutz">Datenschutz</a> </li>
+    <li class="toc"><a href="#rechtliches">Rechtliches</a> </li>
+    <li class="toc"><a href="#hinweise">Hinweise</a> </li>
 </ol>
 <br/>
 <p>Stand: Juni 2023</p>
-<br id="hKeyFeatures"/>
+<br id="kurzbeschreibung"/>
 <h1>Kurzbeschreibung</h1>
 <p>Barrierefrei unterwegs mit den Öffis - dafür haben wir Liftchecker erstellt! Wir bieten eine hochgradig integrierte App, um möglichst ohne Probleme durch den ÖPNV zu kommen und alle Informationen "auf einen Klick" zur Hand zu haben, die wichtig sind, wenn man trotz Mobilitätseinschränkung aktiv sein will.</p>
 <p>Liftchecker</p>
@@ -56,26 +65,26 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 </ol>
 
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
-<br id="hSettings"/>
-<h1>Features und Einstellungen</h1>
+<br id="features"/>
+<h1>Features</h1>
 <p>Liftchecker</p>
 <ol>
-    <li>hat intuitive und flexible <a href="#hSearch">Suchmöglichkeiten</a> in der Liftliste. Mittels des Sternsymbols kann eine Liftauswahl - die Favoriten - zusammengestellt werden. Die Liftliste kann mit dem Filtersymbol zwischen 'alle' und 'nur gewählte' umgeschaltet werden. Ferner ist es möglich Suchabfragen zu speichern und sie wieder aufzurufen. </li>
+    <li>hat intuitive und flexible <a href="#suche">Suchmöglichkeiten</a> in der Liftliste. Mittels des Sternsymbols kann eine Liftauswahl - die Favoriten - zusammengestellt werden. Die Liftliste kann mit dem Filtersymbol zwischen 'alle' und 'nur gewählte' umgeschaltet werden. Ferner ist es möglich Suchabfragen zu speichern und sie wieder aufzurufen. </li>
     <li>zeigt im Hauptbereich und via Benachrichtigungen den Gesamtstatus der Favoriten an - somit ist man auf einen Blick über den Betriebszustand informiert. Ein Klick zeigt die Details.</li>
     <li>alarmiert auf Wunsch via Benachrichtigung automatisch über Störungen der ausgewählten Lifte.</li>
     <li>verfügt über Einstellmöglichkeiten zum Abfragen des Liftstatus nur zu bestimmten Wochentagen und Uhrzeiten. Es können bis zu sieben Zeitfenster festgelegt werden, die die automatische Hintergrundaktivität steuern.</li>
     <li>kann Liftalarme eine konfigurierbare Zeitspanne zurückstellen. Dies ist direkt über die Benachrichtigung als auch in der App möglich.</li>
     <li>fragt via 'Liftstatus jetzt prüfen' oder im Hintergrund immer nur - um Datenvolumen zu sparen - die gewählten Favoriten ab. Da die APIs auf Ebene der Station arbeiten (und nicht mit Lift), werden alle Lifte der Station mit aktualisiert. Die übrige Gesamtliste veraltet, kann aber im Menü unter 'Lifte' jederzeit aktualisiert werden.</li>
-    <li id="hSymbols">stellt in der Liftliste auf der linken Seite drei Icons dar, jeweils eine Auswahl aus <br/>a) Aufzug, Rolltreppe (wir nennen beides als Überbegriff 'Lift'), 'Bahnhof ohne Lift' oder Unbekannt (wenn keine Infos von der Online-Schnittstelle geliefert werden, werden virtuelle Einträge anhand der fehlenden Stationen ggü der statisch eingebundenen Stationsinformationen generiert), <br/>b) Anbieter (Provider), z.Zt. MVG, DB und <br/>c) Status des Lifts/der Station. Der Status kann sein: OK (in Betrieb), NBP (Nicht barrierefrei passierbar/außer Betrieb), TMT (Timeout; wann die Information als veraltet gilt kann man einstellen) und ? (unbekannt). Jeder Eintrag besitzt ein kontextabhängiges Popup-Menü mit weiteren nützlichen Optionen.</li>
+    <li id="symbol">stellt in der Liftliste auf der linken Seite drei Icons dar, jeweils eine Auswahl aus <br/>a) Aufzug, Rolltreppe (wir nennen beides als Überbegriff 'Lift'), 'Bahnhof ohne Lift' oder Unbekannt (wenn keine Infos von der Online-Schnittstelle geliefert werden, werden virtuelle Einträge anhand der fehlenden Stationen ggü der statisch eingebundenen Stationsinformationen generiert), <br/>b) Anbieter (Provider), z.Zt. MVG, DB und <br/>c) Status des Lifts/der Station. Der Status kann sein: OK (in Betrieb), NBP (Nicht barrierefrei passierbar/außer Betrieb), TMT (Timeout; wann die Information als veraltet gilt kann man einstellen) und ? (unbekannt). Jeder Eintrag besitzt ein kontextabhängiges Popup-Menü mit weiteren nützlichen Optionen.</li>
 </ol>
 <p>Optionen in der Liftliste (Long-Klick):</p>
 <ul>
-    <li>Navigation zu <a href='#hMaps'>Stations- und Umgebungsplänen</a>.</li>
+    <li>Navigation zu <a href='#pläne-und-karten'>Pläne und Karten</a>.</li>
     <li>Lift umbenennen (da die Informationen der Anbieter teilweise auslegungsfähig sind).</li>
     <li>Zurückstellen von Alarmen: manuelles Setzen und Aufheben.</li>
-    <li>Such-String: siehe <a href='#hSearch'>eigenes Kapitel</a>. </li>
+    <li>Such-String: siehe <a href='#suche'>eigenes Kapitel</a>. </li>
     <li>Favoriten verwalten: Massenfunktionen und Einsortieren von nachträglich ausgewählten Liften zu den namensgleichen Stationen: Verfügbar am Listenende (des dort obersten) zum 'Nach-oben-Verschieben' (Moni-Feature:)).</li>
-    <li><a href='#hGeo'>Geodaten nutzen</a></li>
+    <li><a href='#geodaten'>Geodaten nutzen</a></li>
     <li>Zusatz-Informationen sind in der Liftliste mit * gekennzeichnet. Hier kann man bei der MVG Planungsdaten für die prognostizierte Wiederverfügbarkeit betrachten - die DB-Einträge bieten hier Stations-Informationen. Wenn dort entsprechende Textpassagen ausgewählt werden, bieten die meisten Mobiltelefone kontextspezifische Optionen wie: Karte öffnen, anrufen, ... </li>
 </ul>
 <p>Android</p>
@@ -85,7 +94,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 </ol>
 
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
-<br id="hNotifications"/>
+<br id="benachrichtigungen"/>
 <h1>Benachrichtigungen</h1>
 <p>Liftchecker</p>
 <ul>
@@ -104,13 +113,13 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 </ul>
 
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
-<br id="hSearch"/>
+<br id="suche"/>
 <h1>Suche</h1>
 <p>Die Suche in den Liften soll sowohl einfach zugänglich sein, als auch Spezialbedürfnisse befriedigen. Generell gilt:</p>
 <ul>
     <li>Groß-/Kleinschreibung ist egal.</li>
     <li>Leerzeichen trennen die Eingabe in Such-Token. Jeder Token wird einzeln gesucht.</li>
-    <li>Ein Bahnhof ist in der Liste nur dann als <b>Lift</b> enthalten, wenn die Online-API ihn mit mindestens einem Aufzug oder einer Rolltreppe zurückmeldet. Der Bahnhof wird anderenfalls aus den statisch eingebunden Infos generiert (erkennbar am <a href="#hSymbols">Symbol</a> Bahnhof ohne Lift)</li>
+    <li>Ein Bahnhof ist in der Liste nur dann als <b>Lift</b> enthalten, wenn die Online-API ihn mit mindestens einem Aufzug oder einer Rolltreppe zurückmeldet. Der Bahnhof wird anderenfalls aus den statisch eingebunden Infos generiert (erkennbar am <a href="#symbol">Symbol</a> Bahnhof ohne Lift)</li>
     <li>Worin und wie wird gesucht? Im sog. Such-String mit einem simplen "ist enthalten" - es wurde auf Wildcards (*,?) verzichtet.</li>
     <li>Wenn man einfach lostippt führt man eine Freitext-Suche - eine sog. "simple query" - aus. Ob damit im gesamten Such-String jedes einzelnen Liftes, oder nur gezielt nach Stationen gesucht wird, ist abhängig von der Einstellung "Einfache Stationssuche".</li>
 </ul>
@@ -168,8 +177,8 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 </ul>
 
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
-<br id="hMaps"/>
-<h1>Bahnhofspläne und Umgebungskarten</h1>
+<br id="pläne-und-karten"/>
+<h1>Pläne und Karten</h1>
 <p>Da die von den Anbietern gewählten Bezeichnungen der Aufzüge und Rolltreppen oftmals alleine nicht ausreichen, um die Zeile in der App einem Lift in der Realität zuzuordnen, wurde die Möglichkeit geschaffen, kontextbezogene Stations-Infos im Browser anzuzeigen. Folgendes wird über das Popup-Menü in der Liftauswahl angeboten. </p>
 <ul>
     <li>Für alle MVG-Stationen ist die interaktive Zoom-Liftkarte und ein MVV-Bahnhofsplan aufrufbar.</li>
@@ -182,31 +191,31 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 <p>Im Hauptmenü der Ansicht 'Lifte und Stationen' befindet sich der Menüpunkt 'Pläne und Links'. Hier werden kontext-<i>un</i>spezifische Informationen bereitgestellt. Der bahnhofsspezifische Teil ist im Long-Klick-Menü des jeweiligen Listeneintrags.</p>
 
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
-<br id="hGeo"/>
+<br id="geodaten"/>
 <h1>Geodaten</h1>
 <p>Unsere App</p>
 <ul>
-    <li>verfügt über eine Integration mit <i>OrganicMaps</i> (einem Fork von MapsMe), einem tollen Projekt mit ähnlichen Wertevorstellungen wie unsere. OM zu nutzen erfordert eine Installation (z.B. über einen App Store). OM ist eine Offline-Karten-App, welche aus Liftchecker heraus aufgerufen werden und so die Liftchecker-Stationen (und deren Sammelstatus) auf einer Karte visualisieren kann. Der Sammelstatus einer Station kann sein: a) grün - barrierefrei passierbar, b) rot - Barriere(n) vorhanden, c) grau - unbestimmt, d) braun - inaktuell. LC ruft OM aus dem <i>aktuellen</i> Kontext heraus auf, d.h. wenn man im LC nur Aufzüge in der Liste hat, wird im OM auch nur der Status dieser Aufzüge (zusammengefasst auf Stationen) angezeigt - Rolltreppen werden also dann nicht berücksichtigt. Man hat somit insbesondere über die <a href="#hSearch">Suche</a> selbst die Kontrolle, welchen Gesamtstatus man im OM sieht. Am besten öffnet man OM parallel zu LC und wechselt zwischen den Apps: Ein Long-Klick auf den Text einer Kartenmarkierung kopiert den Stationsnamen in die Zwischenablage, diesen Text dann im LC suchen - dort bekommt man die Details, warum ein Status nicht grün ist. Wer die Kartenmarkierungen wieder loswerden will, führt in OM eine Suche aus. </li>
+    <li>verfügt über eine Integration mit <i>OrganicMaps</i> (einem Fork von MapsMe), einem tollen Projekt mit ähnlichen Wertevorstellungen wie unsere. OM zu nutzen erfordert eine Installation (z.B. über einen App Store). OM ist eine Offline-Karten-App, welche aus Liftchecker heraus aufgerufen werden und so die Liftchecker-Stationen (und deren Sammelstatus) auf einer Karte visualisieren kann. Der Sammelstatus einer Station kann sein: a) grün - barrierefrei passierbar, b) rot - Barriere(n) vorhanden, c) grau - unbestimmt, d) braun - inaktuell. LC ruft OM aus dem <i>aktuellen</i> Kontext heraus auf, d.h. wenn man im LC nur Aufzüge in der Liste hat, wird im OM auch nur der Status dieser Aufzüge (zusammengefasst auf Stationen) angezeigt - Rolltreppen werden also dann nicht berücksichtigt. Man hat somit insbesondere über die <a href="#suche">Suche</a> selbst die Kontrolle, welchen Gesamtstatus man im OM sieht. Am besten öffnet man OM parallel zu LC und wechselt zwischen den Apps: Ein Long-Klick auf den Text einer Kartenmarkierung kopiert den Stationsnamen in die Zwischenablage, diesen Text dann im LC suchen - dort bekommt man die Details, warum ein Status nicht grün ist. Wer die Kartenmarkierungen wieder loswerden will, führt in OM eine Suche aus. </li>
     <li>bietet im Liftmenü (Long-Klick auf einen Eintrag in der Liftliste) die Möglichkeit Geodaten zu nutzen <i>ohne</i> dass Berechtigungen für den Standort erteilt werden müssen. Es kann ein Listeneintrag als Zentrum festlegt werden. Sodann werden in der Liftliste die Distanzen dieses Ortes zu den anderen sichtbaren berechnet und angezeigt. </li>
     <li>kann die Einträge der Liftliste entweder nach geografischer Distanz oder in alphabetischer Reihenfolge sortiert darstellen. Da die Distanz-Berechnung nicht unaufwändig ist - obwohl nur ein einfacher, ungenauer Algorithmus verwendet wird - kann das für umfangreiche Listen einen Moment lang Zeit benötigen. Deswegen haben wir auf eine automatische Umschaltung verzichtet. Man hat die Möglichkeit dies im Liftmenü über 'Liste sortieren' anzustoßen. Wenn ein Geo-Bezugspunkt ausgewählt ist, wird nach der Distanz zu diesem sortiert. Falls nicht, nach alphabetischer Reihenfolge.</li>
     <li>ermöglicht Karten direkt aufzurufen: a) Google Maps b) Organic Maps c) Handy-spezifische Integration über die Textselektion der Geokoordinaten aus dem Such-String. Wenn man dort Text so auswählt <span style="font-family:courier;">geo:[ <span style="background-color:#AAAAAA;">52.67556, 13.59264</span> ]</span> sollte das Gerät erkennen, dass es sich dabei um Geokoords handelt und einen entsprechenden Menüpunkt, z.B. 'Karte öffnen' anbieten. Tipp: dies funktioniert für Adressen, Telefonnummern (z.B. die in die App integrierten Nummern der 3S-Zentrale sowie des Mobility-Service), u.a. oft auch. </li>
     <li>hat uns ermöglicht die Geodaten der Lifte aus den Online-API-Calls einfach zu untersuchen - da dabei sich einige Detail-Infos als ziemlich irreführend herausstellten, haben wir uns entschieden nicht für jeden Lift diese Details zu verwenden, sondern statische Stationsdaten. Somit kann man also mit unserer App <i>keine</i> Annäherungsverfolgung an einen bestimmten Lift vornehmen - alle Lifte einer Station haben die gleiche Koordinate. </li>
-    <li>besitzt <i>keine</i> Meldefunktionen (zur Datenverbesserung o.a.), da wir leider selbst über keinen "direkten Draht" zu den Anbietern der Online-Schnittstellen verfügen, der solche Informationen verarbeiten könnte. Wenn SnfiCert-Bewertungen korrigiert werden sollen, kann man die <a href="#hBugsLog">Support-Mailadresse</a> nutzen.</li>
+    <li>besitzt <i>keine</i> Meldefunktionen (zur Datenverbesserung o.a.), da wir leider selbst über keinen "direkten Draht" zu den Anbietern der Online-Schnittstellen verfügen, der solche Informationen verarbeiten könnte. Wenn SnfiCert-Bewertungen korrigiert werden sollen, kann man die <a href="#fehler-melden">Support-Mailadresse</a> nutzen.</li>
 </ul>
 
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
-<br id="hPrivacy"/>
+<br id="datenschutz"/>
 <h1>Datenschutz</h1>
 <p>Liftchecker</p>
 <ol>
-    <li>fragt die in der <a href="#hKeyFeatures">Einleitung</a> genannten Datenquellen im Internet ab. Die Datenverwendung der jeweiligen Anbieter haben wir nicht unter Kontrolle - diese Schnittstellen sind aber offiziell - auch für die hier vorliegende Form der Nutzung - freigegeben. </li>
+    <li>fragt die in der <a href="#kurzbeschreibung">Einleitung</a> genannten Datenquellen im Internet ab. Die Datenverwendung der jeweiligen Anbieter haben wir nicht unter Kontrolle - diese Schnittstellen sind aber offiziell - auch für die hier vorliegende Form der Nutzung - freigegeben. </li>
     <li>selbst speichert und verwendet die Benutzereingaben, damit es seinen offensichtlichen Zweck - Liftstatus abfragen - erfüllen kann und in keinem Maße über die hier genannten Punkte hinaus. Die Auswahl der Lifte stellen keine personenbezogenen Daten im engeren Sinne dar und sind damit datenschutzrechtlich grundsätzlich als unbedenklich einzustufen. Die App fragt die Daten ab, so und wie sie eingestellt wurden. Es werden durch Liftchecker <i>keine anderen</i> Übertragungen oder Verarbeitungen durchgeführt. Snfiware ist Datenschutz und Privatsphäre sehr wichtig. Tatsächlich könnte natürlich beim jeweiligen Dienst durch die Abfrage und die dadurch übermittelte Liftauswahl in Verbindung mit Zeit und verwendetem Endgerät ein Rückschluss auf personenbezogene Informationen möglich sein. </li>
-    <li>schreibt Protokolleinträge in den geräteinternen LogCat-Ringpuffer (dies ist ein Bereich fester Größe, der ständig im Hintergrund durch Android und die Apps geschrieben und regelmäßig wieder überschrieben wird). Durch Liftchecker werden nur in die App eingegebene Daten, App-interne Verlaufsinformationen und Informationen zum Zwecke der Fehleranalyse geschrieben. Wir bieten eine integrierte <a href="#hBugsLog">Funktion zur Fehlermeldung</a> an, welche daraus eine Logdatei erstellen und bereitstellen kann. Solange sie diese Funktion nicht nutzen, bleiben Log-Informationen vollständig lokal und werden regelmäßig überschrieben. Die aus dem LogCat erstellte Log-Datei <i>könnte tatsächlich</i> datenschutzrechtlich relevante Informationen enthalten, da sie mittels APIs des Betriebssystems zusammengestellt wird - diese Interna haben wir nicht unter Kontrolle. Die Logdatei kann aber vor einer Übermittlung an uns überprüft werden. Das Verhalten der Protokollierung kann in der App grundsätzlich eingestellt werden. Falls generellere Vorgaben gewünscht werden, empfehlen wir, sich mit 'Android ADB LogCat' zu beschäftigen (googlen).</li>
+    <li>schreibt Protokolleinträge in den geräteinternen LogCat-Ringpuffer (dies ist ein Bereich fester Größe, der ständig im Hintergrund durch Android und die Apps geschrieben und regelmäßig wieder überschrieben wird). Durch Liftchecker werden nur in die App eingegebene Daten, App-interne Verlaufsinformationen und Informationen zum Zwecke der Fehleranalyse geschrieben. Wir bieten eine integrierte <a href="#fehler-melden">Funktion zur Fehlermeldung</a> an, welche daraus eine Logdatei erstellen und bereitstellen kann. Solange sie diese Funktion nicht nutzen, bleiben Log-Informationen vollständig lokal und werden regelmäßig überschrieben. Die aus dem LogCat erstellte Log-Datei <i>könnte tatsächlich</i> datenschutzrechtlich relevante Informationen enthalten, da sie mittels APIs des Betriebssystems zusammengestellt wird - diese Interna haben wir nicht unter Kontrolle. Die Logdatei kann aber vor einer Übermittlung an uns überprüft werden. Das Verhalten der Protokollierung kann in der App grundsätzlich eingestellt werden. Falls generellere Vorgaben gewünscht werden, empfehlen wir, sich mit 'Android ADB LogCat' zu beschäftigen (googlen).</li>
 </ol>
 
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
-<br id="hLicense"/>
-<h1>Lizenz und Haftungsausschluss</h1>
+<br id="rechtliches"/>
+<h1>Rechtliches</h1>
 <p>Copyright 2023 Snfiware</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this software except in compliance with the License. You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0</p>
 <p>Unless required by applicable law or agreed to in writing, software
@@ -225,7 +234,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 </ul>
 
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
-<br id="hNotes"/>
+<br id="hinweise"/>
 <h1>Hinweise</h1>
 <p>Liftchecker benutzt folgende Software-Bibliotheken. Herzlichen Dank an die jeweiligen Hersteller für die Möglichkeit ihr Produkt kostenfrei nutzen zu können!</p>
 <ul>
@@ -244,4 +253,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     </li>
     <li>Geokoordinaten, Adress- und Zusatzdaten https://data.deutschebahn.com/<br/>dataset/data-haltestellen.html<br/>sowie https://data.deutschebahn.com/<br/>dataset/data-stationsdaten.html</li>
 </ul>
-<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
+<br/>
+<br/>
+</body>
+</html>

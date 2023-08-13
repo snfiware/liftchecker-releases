@@ -5,6 +5,7 @@ Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und 
 <br/> 
 <a href="#download-und-installation"><image src="https://github.com/snfiware/liftchecker-releases/assets/63856302/ba6b2b85-fabc-4fd6-8827-4cb6c60996b1" width="80"/></a>
 
+[![](https://github.com/snfiware/liftchecker-releases/assets/63856302/8567a500-664e-4407-9dae-1617142d93a1)](#download-und-installation)
 
 # Download und Installation
 

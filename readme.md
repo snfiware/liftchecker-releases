@@ -16,8 +16,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 <image src="https://user-images.githubusercontent.com/63856302/225411553-6538e5c0-d7a9-4254-883f-d2767240e430.png" width="200"/>
 </div>
 
-
-<br id="hTopToc"/>
+<br id="inhaltsverzeichnis"/>
 <h1>Inhaltsverzeichnis</h1>
 <ol>
     <li class="toc"><a href="#hKeyFeatures">Kurzbeschreibung</a> </li>
@@ -56,7 +55,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     </li>
 </ol>
 
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="hSettings"/>
 <h1>Features und Einstellungen</h1>
 <p>Liftchecker</p>
@@ -85,7 +84,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li>bietet - je nach Version ein wenig unterschiedlich benannt - unter <i>Bedienungshilfe/Eingabehilfe > Interaktionssteuerung/Erweiterte Einstellungen > Zeit zum Reagieren/Zeit für eine Maßnahme</i> die Option an, die <b>Anzeigedauer von Ausgaben</b> zu verändern. Wem also manche Meldungen zu kurz angezeigt werden, kann dort eine <b>Verlängerung</b> festlegen. Wenn man das nicht verstellen will, weil es generell wirkt, ist es vielleicht eine Alternative einen Screenshot zu machen (Tasten Aus+Leiser gleichzeitig drücken).</li>
 </ol>
 
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="hNotifications"/>
 <h1>Benachrichtigungen</h1>
 <p>Liftchecker</p>
@@ -104,7 +103,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li>bietet die Möglichkeit Störungsmitteilungen / die Alarme zurückzustellen. Erst nachdem die Zeit abgelaufen ist, werden für diesen Lift erneut Benachrichtigungen an den Störungskanal geschickt. Die Benachrichtigungen auf den anderen Kanälen sind unabhängig davon - ein Zurückstellen wirkt also z.B. <u>nicht</u> auf die Standardmitteilungen.</li>
 </ul>
 
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="hSearch"/>
 <h1>Suche</h1>
 <p>Die Suche in den Liften soll sowohl einfach zugänglich sein, als auch Spezialbedürfnisse befriedigen. Generell gilt:</p>
@@ -168,7 +167,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li>Alle anderen werden untereinander ODER verknüpft - dt#b dt#a würde beispielhaft Bahnhöfe ohne Lifte und die Aufzüge selektieren.</li>
 </ul>
 
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="hMaps"/>
 <h1>Bahnhofspläne und Umgebungskarten</h1>
 <p>Da die von den Anbietern gewählten Bezeichnungen der Aufzüge und Rolltreppen oftmals alleine nicht ausreichen, um die Zeile in der App einem Lift in der Realität zuzuordnen, wurde die Möglichkeit geschaffen, kontextbezogene Stations-Infos im Browser anzuzeigen. Folgendes wird über das Popup-Menü in der Liftauswahl angeboten. </p>
@@ -182,7 +181,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
 </ul>
 <p>Im Hauptmenü der Ansicht 'Lifte und Stationen' befindet sich der Menüpunkt 'Pläne und Links'. Hier werden kontext-<i>un</i>spezifische Informationen bereitgestellt. Der bahnhofsspezifische Teil ist im Long-Klick-Menü des jeweiligen Listeneintrags.</p>
 
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="hGeo"/>
 <h1>Geodaten</h1>
 <p>Unsere App</p>
@@ -195,7 +194,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li>besitzt <i>keine</i> Meldefunktionen (zur Datenverbesserung o.a.), da wir leider selbst über keinen "direkten Draht" zu den Anbietern der Online-Schnittstellen verfügen, der solche Informationen verarbeiten könnte. Wenn SnfiCert-Bewertungen korrigiert werden sollen, kann man die <a href="#hBugsLog">Support-Mailadresse</a> nutzen.</li>
 </ul>
 
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="hPrivacy"/>
 <h1>Datenschutz</h1>
 <p>Liftchecker</p>
@@ -205,7 +204,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     <li>schreibt Protokolleinträge in den geräteinternen LogCat-Ringpuffer (dies ist ein Bereich fester Größe, der ständig im Hintergrund durch Android und die Apps geschrieben und regelmäßig wieder überschrieben wird). Durch Liftchecker werden nur in die App eingegebene Daten, App-interne Verlaufsinformationen und Informationen zum Zwecke der Fehleranalyse geschrieben. Wir bieten eine integrierte <a href="#hBugsLog">Funktion zur Fehlermeldung</a> an, welche daraus eine Logdatei erstellen und bereitstellen kann. Solange sie diese Funktion nicht nutzen, bleiben Log-Informationen vollständig lokal und werden regelmäßig überschrieben. Die aus dem LogCat erstellte Log-Datei <i>könnte tatsächlich</i> datenschutzrechtlich relevante Informationen enthalten, da sie mittels APIs des Betriebssystems zusammengestellt wird - diese Interna haben wir nicht unter Kontrolle. Die Logdatei kann aber vor einer Übermittlung an uns überprüft werden. Das Verhalten der Protokollierung kann in der App grundsätzlich eingestellt werden. Falls generellere Vorgaben gewünscht werden, empfehlen wir, sich mit 'Android ADB LogCat' zu beschäftigen (googlen).</li>
 </ol>
 
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="hLicense"/>
 <h1>Lizenz und Haftungsausschluss</h1>
 <p>Copyright 2023 Snfiware</p>
@@ -225,7 +224,7 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     </li>
 </ul>
 
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="hNotes"/>
 <h1>Hinweise</h1>
 <p>Liftchecker benutzt folgende Software-Bibliotheken. Herzlichen Dank an die jeweiligen Hersteller für die Möglichkeit ihr Produkt kostenfrei nutzen zu können!</p>
@@ -245,4 +244,4 @@ Download <pre style='display:inline-block;'> <a href='https://github.com/snfiwar
     </li>
     <li>Geokoordinaten, Adress- und Zusatzdaten https://data.deutschebahn.com/<br/>dataset/data-haltestellen.html<br/>sowie https://data.deutschebahn.com/<br/>dataset/data-stationsdaten.html</li>
 </ul>
-<div style="text-align:right;padding-right:20px;"><a href="#hTopToc">back to top</a></div>
+<div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>

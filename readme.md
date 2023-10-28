@@ -3,8 +3,8 @@ Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und 
 
 # Download und Installation
 
-[![](https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png)](https://github.com/snfiware/liftchecker-releases/releases/download/v1.0.3/snflc-v1.0.3-Public-release.apk)
-*    [Download APK](https://github.com/snfiware/liftchecker-releases/releases/download/v1.0.3/snflc-v1.0.3-Public-release.apk)
+[![](https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png)](https://github.com/snfiware/liftchecker-releases/releases/download/v1.1.2/snflc-v1.1.2-Public-release.apk)
+*    [Download APK](https://github.com/snfiware/liftchecker-releases/releases/download/v1.1.2/snflc-v1.1.2-Public-release.apk)
 *    [Installationshinweise](https://github.com/snfiware/liftchecker-releases/blob/main/main/install.md)
 
 

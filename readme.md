@@ -3,8 +3,8 @@ Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und 
 
 # Download und Installation
 
-[![](https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png)](https://github.com/snfiware/liftchecker-releases/releases/download/v1.1.2/snflc-v1.1.2-Public-release.apk)
-*    [Download APK](https://github.com/snfiware/liftchecker-releases/releases/download/v1.1.2/snflc-v1.1.2-Public-release.apk)
+[![](https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png)](https://github.com/snfiware/liftchecker-releases/releases/download/v1.1.3/snflc-v1.1.3-Public-release.apk)
+*    [Download APK](https://github.com/snfiware/liftchecker-releases/releases/download/v1.1.3/snflc-v1.1.3-Public-release.apk)
 *    [Installationshinweise](https://github.com/snfiware/liftchecker-releases/blob/main/main/install.md)
 
 
@@ -40,7 +40,7 @@ Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und 
     <li class="toc"><a href="#hinweise">Hinweise</a> </li>
 </ol>
 <br/>
-<p>Stand: Oktober 2023</p>
+<p>Stand: Februar 2024</p>
 <br id="kurzbeschreibung"/>
 <h1>Kurzbeschreibung</h1>
 <p>Barrierefrei unterwegs mit den Öffis - dafür haben wir Liftchecker erstellt! Wir bieten eine hochgradig integrierte App, um möglichst ohne Probleme durch den ÖPNV zu kommen und alle Informationen "auf einen Klick" zur Hand zu haben, die wichtig sind, wenn man trotz Mobilitätseinschränkung aktiv sein will.</p><p>Diese App ist für <b>Rollstuhlfahrer in und um München optimiert</b> und stellt die <a href="#prüflabel">selbst erstellten Inhalte</a> grundsätzlich aus dieser Perspektive dar.</p>

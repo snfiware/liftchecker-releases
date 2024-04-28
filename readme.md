@@ -21,7 +21,6 @@ Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und 
     <meta charset="utf-8" content="text/html"/>
     <!-- css filename is altered by the HelpActivity::onCreate-->
     <link href="styles_main.css" rel="stylesheet">
-    <title>Infos zu Liftchecker</title>
 </head>
 <body>
 

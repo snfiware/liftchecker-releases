@@ -3,8 +3,8 @@ Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und 
 
 # Download und Installation
 
-[![](https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png)](https://github.com/snfiware/liftchecker-releases/releases/download/v1.1.3/snflc-v1.1.3-Public-release.apk)
-*    [Download APK](https://github.com/snfiware/liftchecker-releases/releases/download/v1.1.3/snflc-v1.1.3-Public-release.apk)
+[![](https://github.com/snfiware/liftchecker-releases/blob/main/main/ic_launcher.png)](https://github.com/snfiware/liftchecker-releases/releases/download/v1.2/snflc-v1.2-Public-release.apk)
+*    [Download APK](https://github.com/snfiware/liftchecker-releases/releases/download/v1.2/snflc-v1.2-Public-release.apk)
 *    [Installationshinweise](https://github.com/snfiware/liftchecker-releases/blob/main/main/install.md)
 
 
@@ -15,13 +15,13 @@ Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und 
 <image src="https://user-images.githubusercontent.com/63856302/225411548-0ba44651-9ab4-47ad-a5f7-2a9fffba2897.png" width="200"/>
 <image src="https://user-images.githubusercontent.com/63856302/225411553-6538e5c0-d7a9-4254-883f-d2767240e430.png" width="200"/>
 </div>
-
 <!DOCTYPE HTML>
-<html>
+<html lang="de">
 <head>
     <meta charset="utf-8" content="text/html"/>
     <!-- css filename is altered by the HelpActivity::onCreate-->
     <link href="styles_main.css" rel="stylesheet">
+    <title>Infos zu Liftchecker</title>
 </head>
 <body>
 
@@ -40,7 +40,7 @@ Prüft Aufzüge und Rolltreppen der MVG + DB, benachrichtigt bei Störungen und 
     <li class="toc"><a href="#hinweise">Hinweise</a> </li>
 </ol>
 <br/>
-<p>Stand: Februar 2024</p>
+<p>Stand: April 2024</p>
 <br id="kurzbeschreibung"/>
 <h1>Kurzbeschreibung</h1>
 <p>Barrierefrei unterwegs mit den Öffis - dafür haben wir Liftchecker erstellt! Wir bieten eine hochgradig integrierte App, um möglichst ohne Probleme durch den ÖPNV zu kommen und alle Informationen "auf einen Klick" zur Hand zu haben, die wichtig sind, wenn man trotz Mobilitätseinschränkung aktiv sein will.</p><p>Diese App ist für <b>Rollstuhlfahrer in und um München optimiert</b> und stellt die <a href="#prüflabel">selbst erstellten Inhalte</a> grundsätzlich aus dieser Perspektive dar.</p>
@@ -253,14 +253,14 @@ Spezialfeature Stationsliste
 <div style="text-align:right;padding-right:20px;"><a href="#inhaltsverzeichnis">back to top</a></div>
 <br id="rechtliches"/>
 <h1>Rechtliches</h1>
-<p>Copyright 2023 Snfiware</p>
+<p>Copyright 2024 Snfiware</p>
 <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this software except in compliance with the License. You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0</p>
 <p>Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.</p>
-<p>Kurz zusammengefasst und in Deutsch:</p>
+<p>Das Wesentliche in Deutsch:</p>
 <ul>
     <li>Wir haben diese Software für eigene Zwecke erstellt und benutzen sie auch weiterhin selbst. Da wir der Meinung sind, dass sie auch für andere von Nutzen sein könnte haben wir entschieden sie zu veröffentlichen.</li>
     <li>Die Nutzung erfolgt auf eigene Gefahr.</li>
@@ -294,6 +294,8 @@ Spezialfeature Stationsliste
 <h2>Kompatibilität</h2>
 <p>
     Android 4.4 (API 19 - Kitkat) ist die älteste Version, die von Liftchecker unterstützt wird. In dieser Version ist ab Werk SSL veraltet, d.h. die in Liftchecker genutzten Online-SNITs werden mit Fehler abbrechen, da sie über HTTPS kommunizieren. Abhilfe kann ein Update der Google Play Services auf die Version 5.0 (API 21 - Lollipop) bringen - dies haben wir nicht verifiziert, haben aber wegen dieser Möglichkeit die Unterstützung für 4.4 erhalten.
+</p><p>
+    Android 7.1.1 (API 25 - Nougat) ist die älteste Version, mit der Liftchecker ohne weitere Maßnahmen vollständig fehlerfrei funktionieren kann. Ältere Versionen (also API 24 und abwärts) haben ggf. Probleme mit der Schnittstelle zur Deutschen Bahn, da diese neuere SSL-Zertifikate fordert (=DB-Lifte nicht verfügbar), die in den benutzten Basiskomponenten standardmäßig nicht vorhanden sind. Da die MVG ältere akzeptiert, haben wir die Möglichkeit erhalten.
 </p>
 <br id="spezialfälle"/>
 <h2>Spezialfälle</h2>
@@ -313,7 +315,3 @@ Spezialfeature Stationsliste
         <p>Ohne Zusatzinformationen wäre es falsch einen Listeneintrag eines liftlosen Bahnhofs nur aufgrund "DB-Stufenlos:ja" auf einen anderen Wert als "?" zu setzen. Der Bahnsteig mag wohl komplett stufenlos sein, wenn jedoch z.B. die Bahnsteighöhe zu niedrig wäre, dann kann man ggf. deswegen nicht in den Zug einsteigen. Tipp: Im Liftmenü bahnhof.de wählen. Mit ein wenig Glück kann dort unter "Ausstattung für Barrierefreiheit" die Option Bahnsteighöhen abgefragt werden. </p>
     </li>
 </ul>
-<br/>
-<br/>
-</body>
-</html>
